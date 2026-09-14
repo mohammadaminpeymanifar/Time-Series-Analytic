@@ -1,0 +1,95 @@
+=================================ARIMA-GARCH Time Series Forecasting & Volatility Modeling============================================
+## 🇬🇧 English
+This project demonstrates a complete time series forecasting workflow using a hybrid **ARIMA-GARCH** approach.
+
+The objective is to model both::
+Expected Return (Mean Process) using ARIMA
+Volatility / Risk (Variance Process) using GARCH
+
+The project simulates financial price data, transforms it into stationary log returns, analyzes autocorrelation patterns, forecasts future returns, and estimates conditional volatility.
+
+---
+Technologies & Libraries::
+Python
+NumPy
+Pandas
+Matplotlib
+Statsmodels
+ARCH
+
+---
+Project Workflow::
+Financial Price Simulation:
+A synthetic financial price series is generated using a Random Walk process.
+Stationarity Analysis:
+Since ARIMA models require stationary data, prices are transformed into logarithmic returns and evaluated using the Augmented Dickey-Fuller (ADF) test.
+ACF & PACF Analysis:
+Autocorrelation (ACF) and Partial Autocorrelation (PACF) plots are used to investigate the dependency structure of the series and guide ARIMA parameter selection.
+ARIMA Modeling:
+An ARIMA(1,0,1) model is fitted to capture the mean behavior of returns.
+GARCH Modeling:
+Residuals from the ARIMA model are used to fit a GARCH(1,1) model in order to estimate time-varying volatility and risk.
+Forecasting:
+The model generates:
+Next-period expected return
+Next-period expected volatility
+
+---
+Key Concepts Demonstrated::
+Time Series Analysis
+Stationarity Testing
+ADF Test
+Log Returns
+Autocorrelation Analysis
+ARIMA Modeling
+Residual Analysis
+Volatility Clustering
+GARCH Modeling
+Financial Risk Forecasting
+
+---
+Example Output::
+Stationarity Test Results
+ACF / PACF Visualizations
+ARIMA Forecast
+GARCH Conditional Volatility
+Future Return & Risk Prediction
+======================================================================================================================================
+## 🇮🇷 فارسی
+این پروژه یک نمونه کامل از تحلیل سری‌های زمانی مالی با استفاده از مدل ترکیبی **ARIMA-GARCH** است.
+
+هدف پروژه مدل‌سازی همزمان دو بخش مهم داده‌های مالی است::
+پیش‌بینی بازدهی مورد انتظار با استفاده از ARIMA
+برآورد ریسک و نوسانات بازار با استفاده از GARCH
+
+در این پروژه ابتدا داده‌های قیمت شبیه‌سازی شده، سپس به بازدهی لگاریتمی تبدیل می‌شوند و پس از بررسی مانایی، 
+مدل‌های ARIMA و GARCH 
+برای پیش‌بینی روند و ریسک به کار گرفته می‌شوند.
+
+---
+مراحل پروژه::
+شبیه‌سازی داده‌های قیمت مالی
+تبدیل قیمت به بازدهی لگاریتمی
+بررسی مانایی با آزمون ADF
+تحلیل ACF و PACF
+مدل‌سازی میانگین بازدهی با ARIMA
+مدل‌سازی نوسانات با GARCH
+پیش‌بینی بازدهی و ریسک روز آینده
+
+---
+مهارت‌های مورد استفاده::
+Python
+تحلیل سری زمانی
+تحلیل داده‌های مالی
+مدل‌های ARIMA
+مدل‌های GARCH
+آمار و اقتصادسنجی
+پیش‌بینی و تحلیل ریسک
+
+---
+کاربردهای واقعی::
+تحلیل بازار سرمایه
+مدیریت ریسک
+پیش‌بینی نوسانات قیمت دارایی‌ها
+تحلیل بازدهی سهام
+مدل‌سازی مالی و اقتصادسنجی
